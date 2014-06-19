@@ -2,7 +2,7 @@
   <kbase name="default" default="true" eventProcessingMode="stream" equalsBehavior="identity">
     <ksession name="defaultksession" type="stateful" default="true" clockType="realtime">
       <workItemHandlers>
-        <workItemHandler type="new org.fusebyexample.examples.wih.GreeterCallbackWih()" name="GreeterCallbackWih"/>
+        <workItemHandler type="new org.fusebyexample.examples.wih.GreeterCallbackWih()" name="GreeterCallback"/>
       </workItemHandlers>
     </ksession>
   </kbase>
