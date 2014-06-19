@@ -1,1 +1,9 @@
-<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="default" default="true" eventProcessingMode="stream" equalsBehavior="identity" includes="defaultkbase">
+    <ksession name="defaultksession" type="stateful" default="true" clockType="realtime">
+      <workItemHandlers>
+        <workItemHandler type="new org.fusebyexample.examples.wih.GreeterCallbackWih()" name="GreeterCallbackWih"/>
+      </workItemHandlers>
+    </ksession>
+  </kbase>
+</kmodule>
