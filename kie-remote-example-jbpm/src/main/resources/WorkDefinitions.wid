@@ -55,6 +55,17 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     ],
     "displayName" : "REST",
     "icon" : "defaultservicenodeicon.png"
+  ],
+
+  [
+    "name" : "GreeterCallback",
+    "parameters" : [
+        "callbackId" : new StringDataType(),
+         "callbackUri" : new StringDataType(),
+         "greeting" : new StringDataType()
+    ],
+    "displayName" : "Greeter Callback",
+    "icon" : "defaultservicenodeicon.png"
   ]
 
 ]
